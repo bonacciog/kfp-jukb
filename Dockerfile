@@ -12,6 +12,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # pipeline sdk
 RUN pip install kfp --upgrade
 
+# kf fairing
+RUN pip install kubeflow-fairing
+
 # Kubeflow config
 # jupyter
 RUN pip install jupyterlab
