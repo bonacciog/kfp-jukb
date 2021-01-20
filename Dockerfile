@@ -18,6 +18,10 @@ RUN pip install kfp --upgrade
 # kf fairing
 RUN pip install kubeflow-fairing
 
+RUN git clone https://github.com/kubeflow/fairing 
+
+RUN pip3 install -r fairing/examples/prediction/requirements.txt
+
 # Kubeflow config
 # jupyter
 RUN pip install jupyterlab
