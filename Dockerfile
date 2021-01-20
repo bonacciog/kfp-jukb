@@ -15,12 +15,12 @@ RUN apt install git-all -y
 # pipeline sdk
 RUN pip install kfp --upgrade
 
-# kf fairing
-RUN pip install kubeflow-fairing
+# # kf fairing
+# RUN pip install kubeflow-fairing
 
-RUN git clone https://github.com/kubeflow/fairing 
+# RUN git clone https://github.com/kubeflow/fairing 
 
-RUN pip3 install -r fairing/examples/prediction/requirements.txt
+# RUN pip3 install -r fairing/examples/prediction/requirements.txt
 
 # Kubeflow config
 # jupyter
