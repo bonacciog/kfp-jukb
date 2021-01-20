@@ -9,6 +9,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     gpg
 
+# git
+RUN apt install git-all
+
 # pipeline sdk
 RUN pip install kfp --upgrade
 
