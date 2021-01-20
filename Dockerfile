@@ -15,7 +15,8 @@ RUN apt install git-all -y
 # pipeline sdk
 RUN pip install kfp --upgrade
 
-# # kf fairing
+# kf fairing
+RUN git clone https://github.com/kubeflow/fairing 
 # RUN pip install kubeflow-fairing
 
 # RUN git clone https://github.com/kubeflow/fairing 
