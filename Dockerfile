@@ -1,7 +1,5 @@
 FROM python:3.8.2
 
-WORKDIR app
-
 RUN apt-get update && apt-get install -y --no-install-recommends \
     software-properties-common \
     build-essential \
@@ -22,6 +20,8 @@ RUN git clone https://github.com/kubeflow/fairing
 # RUN git clone https://github.com/kubeflow/fairing 
 
 # RUN pip3 install -r fairing/examples/prediction/requirements.txt
+
+WORKDIR /home/jovyan
 
 # Kubeflow config
 # jupyter
